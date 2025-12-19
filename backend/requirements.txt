@@ -5,3 +5,4 @@ passlib
 pydantic
 python-jose
 alembic
+python-multipart
