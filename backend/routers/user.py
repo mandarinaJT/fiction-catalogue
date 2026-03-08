@@ -14,6 +14,6 @@ router = APIRouter(
 def create_user(request: schemas.User, db: Session = Depends(get_db), current_user: schemas.UserAuth = Depends(get_current_user)):
     return db_user.create_user(db, request)
 
-@router.get('/')
+@router.get('/{user_id}')
 def get_user_by_id(user_id: int, db: Session = Depends(get_db), current_user: schemas.UserAuth = Depends(get_current_user)):
     return db_user.get_user_by_id(db, user_id)
