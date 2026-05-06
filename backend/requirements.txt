@@ -7,3 +7,6 @@ python-jose
 alembic
 python-multipart
 requests
+requests-toolbelt
+gql
+python-dotenv

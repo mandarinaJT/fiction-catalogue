@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     db_host: str = "localhost"
     db_port: int = 3306
     origins: str = ""
+    hardcover_api_key: str
+    hardcover_api_url: str
 
     class Config:
         env_file = ".env.local"
