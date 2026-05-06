@@ -49,3 +49,4 @@ class DiaryEntry(BaseModel):
     score: int
     date: date
     comment: str
+
